@@ -7,7 +7,7 @@ import Subtotal from "./Subtotal";
 const Checkout = () => {
   const shoppingContext = useContext(ShoppingContext);
   const { basket, user } = shoppingContext;
-
+  
   return (
     <div className="checkout">
       <div className="checkout_left">

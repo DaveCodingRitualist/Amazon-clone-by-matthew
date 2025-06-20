@@ -2,12 +2,12 @@ import React, { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
 import CurrencyFormat from 'react-currency-format';
 import './Subtotal.css';
-import ShoppingContext from '../context/shopping/ShoppingContext';
+import ShoppingContext from "../context/shopping/ShoppingContext";
 
 const Subtotal = () => {
   const history = useHistory();
-  const ShoppingContext = useContext(ShoppingContext);
-  const { basket, getBasketTotal } = ShoppingContext;
+  const shoppingContext = useContext(ShoppingContext);
+  const { basket, getBasketTotal } = shoppingContext;
 
   return (
     <div className="subtotal">

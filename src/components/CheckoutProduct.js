@@ -4,7 +4,7 @@ import ShoppingContext from "../context/shopping/ShoppingContext";
 const CheckoutProduct = ({ id, image, title, rating, price, hideButton }) => {
   const shoppingContext = useContext(ShoppingContext);
   const { removeFromBasket } = shoppingContext; // Fixed typo here
-
+  console.log(title, price)
   const removeFromBasketHandler = () => {
     removeFromBasket({ id: id });
   };
